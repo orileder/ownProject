@@ -1,12 +1,112 @@
-body{
-  position: relative;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.searchbox {
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  
+}
+
+.searchBar {
+  font-size: larger;
+
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.searchBox {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+.pfp {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+}
+
+.headSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.parent-container {
+  display: flex;
+  gap: 20px; /* Adjust spacing between graph and grids */
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.graph-container {
+  display: flex;
+  flex-direction: row; /* Change to row to make the graph horizontal */
+  align-items: flex-end; /* Align bars to the bottom */
+  width: 400px; /* Adjust width as needed */
+  background-color: lightgray; /* Example styling */
+  height:350px;
+  position: relative;
+}
+
+.graph-bar {
+  width: 40px; /* Adjust bar width */
+  margin: 0 5px; /* Adjust bar spacing */
+  text-align: center; /* Center the text inside the bars */
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.graph-bar span {
+  display: block;
+  padding-top: 5px; /* Adjust padding as needed */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows */
+  width: 300px; /* Adjust width as needed */
+  border: 1px solid black
+  
+}
+
+.grid-item {
+  background-color: #c5c5c5; /* Example styling */
+  border: 1px solid #ccc; /* Example styling */
+  padding: 20px; /* Example styling */
+  text-align: center; /* Example styling */
+  border: 1px solid black;
+}
+.headliner {
+  grid-column:span 2; /* Span across both columns */
+  text-align: center; /* Center the text */
+  align-items: center;
+}
+.grid-one {
+  position: relative;
+}
+.grid-two {
+  position: relative;
+}
+.headliner2 {
   position: absolute;
-  right: 4%;
-  top: 4%;
-  background-color: darkblue;
+  top: 10px;
+  left: 30px;
 }
