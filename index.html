@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +16,18 @@
       width: 94%;
       object-fit: cover;
     }
+
     .active-btn {
-  background-color: blue;
-  color: white;
-}
+      background-color: blue;
+      color: white;
+    }
 
     .hidden {
       display: none;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div id="page1" class="page">
@@ -32,14 +35,14 @@
         <div class="card mb-3 py-2">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="https://cdn-ikpocbj.nitrocdn.com/MRUYuHqTVSaLMWOByBiYxzcKlFHVzfaV/assets/images/optimized/rev-fc883bc/www.confluencefp.com/app/uploads/2024/04/March-2024-Market-Recap.png" class="img-fluid rounded-start photoedit" alt="...">
+              <img src="https://media.istockphoto.com/id/176221393/photo/businessman-portrait-silhouette-and-a-mysterious-face.jpg?s=612x612&w=0&k=20&c=ptxtuyNZh5rH2TWW3NOHrlhGMZC42d13bnC5VjZG4-Q=" class="img-fluid rounded-start photoedit" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Information</h5>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="exampleFormControlInput1">
+                  <input type="tel" placeholder="0541234567" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <table class="table border">
                   <thead>
@@ -49,10 +52,10 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Full Name</td>
+                      <td>Full Name : jon jhonny</td>
                     </tr>
                     <tr>
-                      <td>Status</td>
+                      <td>Status : online</td>
                     </tr>
                   </tbody>
                 </table>
@@ -63,10 +66,22 @@
         </div>
       </div>
       <div class="row-12 text-center" style="margin-bottom: 20px; background-color: rgb(244, 244, 244); font-weight: 600;">
-        <p>sort by time</p> 
+        <p>sort by time</p>
         <input type="date">
       </div>
-      <div class="row"></div>
+      <div class="row">
+        <div>
+          <div class="row">
+            <div class="col">
+              most active chats
+            </div>
+            <div class="col">
+              most popular nicknames
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row border">
         <!-- table 1 -->
         <div id="table-1" class="col">
@@ -128,9 +143,7 @@
         </div>
       </div>
       <div class="row">
-        
-          <canvas id="myChart"></canvas>
-        
+        <canvas id="myChart"></canvas>
       </div>
     </div>
 
@@ -139,14 +152,14 @@
         <div class="card mb-3 py-2">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="https://cdn-ikpocbj.nitrocdn.com/MRUYuHqTVSaLMWOByBiYxzcKlFHVzfaV/assets/images/optimized/rev-fc883bc/www.confluencefp.com/app/uploads/2024/04/March-2024-Market-Recap.png" class="img-fluid rounded-start photoedit" alt="...">
+              <img src="https://media.istockphoto.com/id/176221393/photo/businessman-portrait-silhouette-and-a-mysterious-face.jpg?s=612x612&w=0&k=20&c=ptxtuyNZh5rH2TWW3NOHrlhGMZC42d13bnC5VjZG4-Q=" class="img-fluid rounded-start photoedit" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Information</h5>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="exampleFormControlInput1">
+                  <input type="tel" placeholder="0541234567" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <table class="table border">
                   <thead>
@@ -156,10 +169,10 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Full Name</td>
+                      <td>Full Name : jon jhonny</td>
                     </tr>
                     <tr>
-                      <td>Status</td>
+                      <td>Status : online</td>
                     </tr>
                   </tbody>
                 </table>
@@ -170,7 +183,9 @@
         </div>
       </div>
       <div style="margin-bottom: 40px;" class="row">
-        <div style="font-weight: 600;" class="row text-center"><p>sort by</p></div>
+        <div style="font-weight: 600;" class="row text-center">
+          <p>sort by</p>
+        </div>
         <div class="container text-center">
           <div class="row align-items-start">
             <div class="col">
@@ -189,8 +204,8 @@
         <div class="row">
           <div class="col">
           </div>
-          <div class="col">
-            <img src="https://cdn.prod.website-files.com/5e42772e6a8cfd42a9715206/607ffb1505117f95a279415d_whatsapp-user-interface.jpeg">
+          <div class="row">
+            <img src="./src/assets/img/wht.png">
           </div>
           <div class="col">
           </div>
@@ -202,28 +217,24 @@
       <button type="button" class="btn col-4 btn-outline-primary active-btn" onclick="showPage('page1', this)">Dashboard</button>
       <button type="button" class="btn col-4 btn-outline-primary" onclick="showPage('page2', this)">Chats</button>
     </div>
-    
-    
   </div>
 
   <script>
-  function showPage(pageId, button) {
-  document.querySelectorAll('.page').forEach(page => {
-    page.classList.add('hidden');
-  });
-  document.getElementById(pageId).classList.remove('hidden');
-  
-  document.querySelectorAll('.btn-outline-primary').forEach(btn => {
-    btn.classList.remove('active-btn');
-  });
-  button.classList.add('active-btn');
-}
+    function showPage(pageId, button) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.add('hidden');
+      });
+      document.getElementById(pageId).classList.remove('hidden');
 
-document.addEventListener('DOMContentLoaded', () => {
-  showPage('page1', document.querySelector('.btn-outline-primary.active-btn'));
-});
+      document.querySelectorAll('.btn-outline-primary').forEach(btn => {
+        btn.classList.remove('active-btn');
+      });
+      button.classList.add('active-btn');
+    }
 
-
+    document.addEventListener('DOMContentLoaded', () => {
+      showPage('page1', document.querySelector('.btn-outline-primary.active-btn'));
+    });
 
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
@@ -261,4 +272,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   </script>
 </body>
+
 </html>
